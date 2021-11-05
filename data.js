@@ -1,3 +1,4 @@
+// every node requires hasTimer true or false
 const textNodes = [
     {
       id: 1,
@@ -9,6 +10,9 @@ const textNodes = [
         } 
       ],
       hasTimer: false,
+      imageUrls: [
+        'Assets folder/(1)Intro screen - Copy/intro(1).gif',
+      ],
     },
     {
       id: 2,
@@ -19,7 +23,11 @@ const textNodes = [
           nextText: 4
         }
       ],
-      hasTimer:false
+      hasTimer: false,
+      imageUrls: [
+        'Assets folder/(2) Game Rules - Copy/gamer rule (1).gif',
+      ],
+      
     },
     {
       id: 3, //fail screen 
@@ -29,11 +37,15 @@ const textNodes = [
           text: 'Restart',
           nextText: 1
         }
-      ]
+      ],
+      hasTimer: false,
+      imageUrls: [
+        'Assets folder/(3) Game over Screen - Copy/gameover(1).gif',
+      ],
     },
     {
       id: 4,
-      text: 'You co-worker Kelly asks you `Did you have a good weekend?` How do you respond?',
+      text: 'You co-worker Kelly asks you "Did you have a good weekend?" How do you respond?',
       options: [
         {
           text: 'Eat Kelly',
@@ -51,10 +63,12 @@ const textNodes = [
           text: 'Say no',
           nextText: 7
         }
-        
+
       ], 
       hasTimer: true,
-      timerMessages: ["You look around nervously", "Kelly seems confused at your long pause", "Kelly seems offended"] //Timer fail 6
+      imageUrls: [
+        'Assets folder/(4) Scenario 1 animations - Copy/Scenario1 full.gif',
+      ],
     },
     {
       id: 5,
@@ -64,7 +78,10 @@ const textNodes = [
           text: 'continue',
           nextText: 3
         }
-      ] //Timer false
+      ], 
+      imageUrls: [
+        'Assets folder/(5) Eat Kelly Image - Copy/Eat kelly (1).gif',
+      ],
     },
     {
       id: 6,
@@ -74,17 +91,25 @@ const textNodes = [
           text: 'continue',
           nextText: 5
         }
-      ] //Timer false
+      ], 
+      hasTimer: false,
+      imageUrls: [
+        'Assets folder/(6) Kelly fail screen - Copy/kelly fail image.jpg',
+      ],
     },
     {
     id: 7,
-      text: 'You try to speak but all that comes out is a loud hiss. Kelly seems confused but goes about her day',
+      text: 'You try to speak but all that comes out is a loud hiss. Kelly seems confused but goes about her day.',
       options: [
         {
           text: 'continue',
           nextText: 9
         }
-      ] //Timer false
+      ], 
+      hasTimer: false,
+      imageUrls: [
+        'Assets folder/(7,8) Return to scenario 1 animation - Copy/kELLY PASS (2).jpg',
+      ],
     },
     {
     id: 8,
@@ -94,7 +119,11 @@ const textNodes = [
           text: 'continue',
           nextText: 9
         }
-      ] //Timer false
+      ], 
+      hasTimer: false,
+      imageUrls: [
+        'Assets folder/(7,8) Return to scenario 1 animation - Copy/kELLY PASS (2).jpg'
+      ],
     },
     {
       id: 9,
@@ -113,13 +142,15 @@ const textNodes = [
           nextText: 13
         },
         {
-          text: 'Hand keyboard',
+          text: 'Hand her a keyboard',
           nextText: 14
         }
         
       ], 
       hasTimer: true,
-      timerMessages: ["You look around nervously", "Kelly seems confused at your long pause", "Kelly seems offended"] //Timer fail 6
+      imageUrls: [
+        'Assets folder/(9) Scenario 2 animations - Copy/Scenario2 full.gif',
+      ],
     }, //fail timer node 11
     {
     id: 10,
@@ -129,7 +160,11 @@ const textNodes = [
             text: 'continue',
             nextText: 3
           }
-        ] //Timer false
+        ],
+        hasTimer: false,
+      imageUrls: [
+        'Assets folder/(10) Eat Customer animation Copy/Eat customer (1).gif',
+      ],
       },
       {
       id: 11,
@@ -143,7 +178,11 @@ const textNodes = [
             text: 'Eat the customer',
             nextText: 10
           }
-        ] //Timer fail and Timer False
+        ],
+        hasTimer: false,
+      imageUrls: [
+        'Assets folder/(11) Customer gone - Copy/Customer gone (1).jpg',
+      ],
       },
       {
       id: 12,
@@ -153,7 +192,11 @@ const textNodes = [
             text: 'continue',
             nextText: 15
           }
-        ] //Timer false
+        ],
+        hasTimer: false,
+      imageUrls: [
+        'Assets folder/(12) Talk to customer - Copy/Talk to customer.gif',
+      ],
       },
         {
         id: 13,
@@ -163,7 +206,11 @@ const textNodes = [
             text: 'continue',
             nextText: 15
           }
-        ] //Timer false
+        ],
+        hasTimer: false,
+      imageUrls: [
+        'Assets folder/(13) point - Copy/point (1).gif',
+      ],
       },
       {
         id: 14,
@@ -173,11 +220,15 @@ const textNodes = [
             text: 'continue',
             nextText: 15
           }
-        ] //Timer false
+        ],
+        hasTimer: false,
+      imageUrls: [
+        'Assets folder/(14) hand keyboard - Copy/hand keyboard(1).gif',
+      ],
       },
       {
         id: 15,
-        text: 'Time for the big presentation with the manager. He asks if you are ready',
+        text: 'Time for the big presentation with the manager. He asks if you are ready.',
         options: [
           {
             text: 'Eat the manager',
@@ -199,7 +250,9 @@ const textNodes = [
           
         ], 
         hasTimer: true,
-        timerMessages: ["The manager seems annoyed", "The manager gets ready to leave."] //Timer fail 6
+      imageUrls: [
+        'Assets folder/(15) Scenario 3 animations - Copy/Sc3 full.gif',
+      ],
       }, //fail timer node 17',
       {
         id: 16,
@@ -209,18 +262,26 @@ const textNodes = [
             text: 'continue',
             nextText: 3
           }
-        ] //Timer false
+        ],
+        hasTimer: false,
+      imageUrls: [
+        'Assets folder/(16) Eat manager - Copy/Eat manager.jpg',
+      ],
         
       },
       {
         id: 17,
-        text: 'The manager notices your skin seems slimy.',
+        text: 'Assets folder/(17) manager frown - Copy/Frown (1).jpg',
         options: [
           {
             text: 'continue',
             nextText: 3
           }
-        ] //Timer false
+        ],
+        hasTimer: false,
+        imageUrls: [
+        'Assets folder/(17) manager frown - Copy/Frown (1).jpg',
+      ],
       },//Timer fail 
       {
       id: 18,
@@ -230,7 +291,11 @@ const textNodes = [
           text: 'continue',
           nextText: 21
         }
-      ] //Timer false
+      ], 
+      hasTimer: false,
+        imageUrls: [
+        'Assets folder/(18,19,22) Return manager smile - Copy/Powerpoint template.jpg',
+      ],
     },
     {
       id: 19,
@@ -240,7 +305,11 @@ const textNodes = [
           text: 'continue',
           nextText: 21
         }
-      ] //Timer false
+      ],
+      hasTimer: false,
+        imageUrls: [
+        'Assets folder/(18,19,22) Return manager smile - Copy/Powerpoint template.jpg',
+      ],
     },
     {
       id: 20,
@@ -250,11 +319,15 @@ const textNodes = [
           text: 'continue',
           nextText: 21
         }
-      ] //Timer false
+      ],
+      hasTimer: false,
+        imageUrls: [
+        'Assets folder/(20, 23) return manager frown - Copy/Frown (1).jpg',
+      ],
     },
     {
       id: 21,
-      text: 'The manager whats to know what the most important takeaway from your presentation.',
+      text: 'The manager whats to know what is the most important takeaway from your presentation.',
       options: [
         {
           text: 'Eat the manager',
@@ -276,7 +349,9 @@ const textNodes = [
         
       ], 
       hasTimer: true,
-      timerMessages: ["The manager seems annoyed", "The manager gets ready to leave."] //Timer fail 6
+        imageUrls: [
+        'Assets folder/(21) Scenario 4 - Copy/sc4 full.gif',
+        ],
     }, //fail timer node 17',    
     {
       id: 22,
@@ -286,7 +361,11 @@ const textNodes = [
           text: 'continue',
           nextText: 24
         }
-      ] //Timer false
+      ],
+      hasTimer: false,
+        imageUrls: [
+        'Assets folder/(22) Return - Copy/Return (1).jpg',
+      ],
     },
     {
       id: 23,
@@ -296,11 +375,15 @@ const textNodes = [
           text: 'continue',
           nextText: 24
         }
-      ] //Timer false
+      ],
+      hasTimer: false,
+        imageUrls: [
+        'Assets folder/(20, 23) return manager frown - Copy/Frown (1).jpg',
+      ],
     },
     {
       id: 24,
-      text: 'The manager says "Well Lizzie I can tell your a just a regular human salesperson but I cannot have an employee with such terrible communication skills."',
+      text: `The manager says "Well Lizzie I can tell you're a just a regular human salesperson but I cannot have an employee with such terrible communication skills."`,
       options: [
         {
           text: 'Eat the manager',
@@ -322,7 +405,9 @@ const textNodes = [
         
       ], 
       hasTimer: true,
-      timerMessages: ["The manager seems annoyed", "The manager gets ready to leave."] //Timer fail 6
+        imageUrls: [
+        'Assets folder/(24) Scenario5 - Copy/SC5 FULL.gif',
+      ],
     }, //fail timer node 17,  
     {
       id: 25,
@@ -332,7 +417,11 @@ const textNodes = [
           text: 'continue',
           nextText: 28
         }
-      ] //Timer false
+      ],
+      hasTimer: false,
+        imageUrls: [
+        'Assets folder/(25, 26) Manager Open mouth - Copy/Lizzie disapear 1.jpg',
+      ],
       },
       {
       id: 26,
@@ -342,7 +431,11 @@ const textNodes = [
           text: 'continue',
           nextText: 28
         }
-      ] //Timer false
+      ],
+      hasTimer: false,
+        imageUrls: [
+        'Assets folder/(25, 26) Manager Open mouth - Copy/Lizzie disapear 1.jpg',
+      ],
       },
       {
         id: 27,
@@ -352,7 +445,11 @@ const textNodes = [
             text: 'continue',
             nextText: 29
           }
-        ] //Timer false
+        ],
+        hasTimer: false,
+        imageUrls: [
+        'Assets folder/(27) Manager eat + lizard tounge - Copy/Eat manager victory (2).jpg',
+      ],
         },
         {
           id: 28,
@@ -362,17 +459,33 @@ const textNodes = [
               text: 'return to start',
               nextText: 1
             }
-          ] //Timer false
+          ],
+          hasTimer: false,
+        imageUrls: [
+        'Assets folder/(28) Victory Screen street background - Copy/Victory street (1).gif',
+      ],
           },
           {
             id: 29,
             text: `Congrats! You've passed as one of them and stayed employed. Great Job!`,
             options: [
               {
-                text: 'continue',
-                nextText: 29
+                text: 'return to start',
+                nextText: 1
               }
-            ] //Timer false
-            },
+            ],
+            hasTimer: false,
+        imageUrls: [
+        'Assets folder/(29) Victory screen city background - Copy/boss victory (1).gif',
+      ],
+          },
   
-  ]
+]
+
+
+let = images [
+  ['image2', 'age2']
+  ['image2', 'age2']
+  ['image2', 'age2']
+  ['image2', 'age2']
+]
